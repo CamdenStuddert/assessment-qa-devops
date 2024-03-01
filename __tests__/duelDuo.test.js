@@ -12,12 +12,12 @@ afterEach(async () => {
 
 describe("Duel Duo tests", () => {
   test("page loads with title", async () => {
-    await driver.get("http://localhost:8000");
+    await driver.get("http://localhost:4000");
     await driver.wait(until.titleIs("Duel Duo"), 1000);
   });
 
   test("Draw button displays choices", async () => {
-    await driver.get("http://localhost:8000");
+    await driver.get("http://localhost:4000");
     await driver.wait(until.titleIs("Duel Duo"), 1000)
     await driver.sleep(1000)
     await driver.findElement(By.id(`draw`)).click()
@@ -26,7 +26,7 @@ describe("Duel Duo tests", () => {
   })
 
   test("", async () => {
-    await driver.get("http://localhost:8000");
+    await driver.get("http://localhost:4000");
     await driver.wait(until.titleIs("Duel Duo"), 1000)
     await driver.sleep(1000)
     await driver.findElement(By.id(`draw`)).click()
